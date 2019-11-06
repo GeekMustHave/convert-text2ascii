@@ -19,6 +19,8 @@ v2.1b, 11/28/2018: Doco Type
 
 PowerShell script to pretty up other PowerShell scripts
 
+To view/print PDF version of this document click on this link:./readme.pdf[link,window='_blank']
+
 == Source
 
 The source for the script and it components is at the `dropbox\myCommands\PowerShell Scripts\convert-text2ascii` folder.
