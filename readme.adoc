@@ -1,0 +1,88 @@
+= convert-text2ascii PowerShell script
+John Schuster <John.schuster@PhoenixWorkgroup.com>
+v2.1b, 11/28/2018: Doco Type
+:Author: John HR Schuster
+:Company:  Phoenix Workgroup
+:toc: left
+:toclevels: 4:
+:imagesdir: ./images
+:pagenums:
+:chapter-label: 
+:experimental:
+:experimental:
+:source-highlighter: coderay
+:icons: font
+:docdir: */documents
+:github: https://github.com/GeekMustHave/Github repository
+:linkattrs:
+:seclinks:
+
+PowerShell script to pretty up other PowerShell scripts
+
+== Source
+
+The source for the script and it components is at the `dropbox\myCommands\PowerShell Scripts\convert-text2ascii` folder.
+
+Copy this entire folder to the `c:\myCommands` folder
+
+== Command
+
+The script command is
+
+   convert-text2ascii -text "Header message" -font big
+
+== Results
+
+The result of the command above is 
+
+NOTE: Default color is Yellow
+
+.convert-text2ascii result
+[source,powershell]
+----
+PS C:\project> convert-text2ascii -text "Header Message" -font small
+  _  _             _           __  __
+ | || |___ __ _ __| |___ _ _  |  \/  |___ ________ _ __ _ ___
+ | __ / -_) _` / _` / -_) '_| | |\/| / -_)_-<_-< _` / _` / -_)
+ |_||_\___\__,_\__,_\___|_|   |_|  |_\___/__/__\__,_\__, \___|
+                                                    |___/
+PS C:\project>
+----
+
+
+.Example
+image::example.png[Example, align='center']
+ 
+
+
+
+== Alias
+
+The alias for this Powershell script needs to be saved in the Powershell profile
+
+Edit the Powershell profile by using Visual Studio Code
+
+  code $profile
+
+Then add the following lines to the profile and save it.
+
+   # --- Alias: convert-text2ascii - Pretty up the PS output 11/28/2018
+   set-alias -name convert-text2ascii -value "c:\myCommands\PowerShellScripts\convert-text2ascii\convert-text2ascii.ps1"
+
+NOTE: Restart the PowerShell or vsCode session
+
+== Additional Documentation
+
+Some of the original documentation is at this link:./convert-text2asciiArt.pdf[Link]
+
+<<<<
+== Document History
+
+.Document History
+[cols='2,2,2,6' options='header']
+|===
+| Date  | Version | Author | Description
+| 11/28/2018 | V2.1b | JHRS |  Initial version
+|===
+
+
